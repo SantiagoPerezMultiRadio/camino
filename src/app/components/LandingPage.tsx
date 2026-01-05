@@ -147,10 +147,10 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
               MEET YOUR R.I.D.E.™
             </h2>
             <p className="text-xl text-yellow-400/80">
-              (Reactive Identity-Driven Entity) 🏁
+              (Reactive Identity-Driven Entity) 
             </p>
             <p className="text-lg text-yellow-400/70 mt-4">
-              It's not just your vehicle. It's your living machine. 🔥
+              It's not just your vehicle. It's your living machine. 
             </p>
           </div>
 
@@ -342,7 +342,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
                 fontFamily: 'monospace',
                 textShadow: '0 0 15px rgba(225, 175, 34, 0.6)'
               }}>
-              📩 CONTACT US
+              CONTACT US
             </h2>
             <p className="text-xl text-yellow-400/80">
               Interested in partnering with CAMINO?
