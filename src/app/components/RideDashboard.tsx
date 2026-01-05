@@ -52,20 +52,7 @@ export function RideDashboard({ onLogout, onNavigateToAccount }: RideDashboardPr
   };
 
   return (
-    <div className="min-h-screen bg-black text-yellow-400 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="fixed inset-0 overflow-hidden opacity-10 pointer-events-none">
-        <div className="absolute inset-0" 
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(225, 175, 34, 0.1) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(225, 175, 34, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-          }}
-        />
-      </div>
-
+    <div className="min-h-screen text-yellow-400 relative overflow-hidden">
       {/* Header */}
       <header className="relative z-10 border-b border-yellow-400/30">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
@@ -353,7 +340,7 @@ export function RideDashboard({ onLogout, onNavigateToAccount }: RideDashboardPr
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-400/10 to-transparent animate-pulse" />
                 <p className="text-xs tracking-wider mb-1 text-yellow-400/70">VOICE:</p>
                 <p className="text-lg tracking-wide relative z-10" style={{ fontFamily: 'monospace' }}>
-                  🔊 {rideData.voiceMessage}
+                  {rideData.voiceMessage}
                 </p>
               </div>
             </div>

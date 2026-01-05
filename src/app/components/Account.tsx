@@ -27,33 +27,7 @@ export function Account({ onLogout }: AccountProps) {
   };
 
   return (
-    <div className="min-h-screen bg-black text-yellow-400 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 overflow-hidden opacity-20">
-        <div className="absolute inset-0" 
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(225, 175, 34, 0.1) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(225, 175, 34, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-          }}
-        />
-        
-        {/* Perspective grid */}
-        <div className="absolute bottom-0 left-0 right-0 h-1/2"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(225, 175, 34, 0.15) 2px, transparent 2px),
-              linear-gradient(to bottom, rgba(225, 175, 34, 0.15) 2px, transparent 2px)
-            `,
-            backgroundSize: '100px 100px',
-            transform: 'perspective(500px) rotateX(60deg)',
-            transformOrigin: 'center bottom'
-          }}
-        />
-      </div>
-
+    <div className="min-h-screen text-yellow-400 relative overflow-hidden">
       {/* Header */}
       <div className="relative z-10 border-b border-yellow-400/30">
         <div className="max-w-7xl mx-auto px-8 py-6">

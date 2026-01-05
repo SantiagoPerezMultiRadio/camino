@@ -17,59 +17,7 @@ export function Login({ onLogin }: LoginProps) {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          {/* Grid lines */}
-          <div className="absolute inset-0" 
-            style={{
-              backgroundImage: `
-                linear-gradient(to right, rgba(225, 175, 34, 0.1) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(225, 175, 34, 0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px',
-              transform: 'perspective(1000px) rotateX(60deg)',
-              transformOrigin: 'center bottom'
-            }}
-          />
-        </div>
-        
-        {/* Speed lines effect */}
-        <div className="absolute inset-0 opacity-20">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: '-100%',
-                width: '200%',
-                animation: `speedLine ${2 + Math.random() * 3}s linear infinite`,
-                animationDelay: `${Math.random() * 2}s`
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Floating cars */}
-        <div className="absolute bottom-10 left-10 opacity-20 animate-pulse">
-          <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
-            <path d="M20 30 L35 20 L65 20 L80 30 L80 40 L20 40 Z" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-            <circle cx="30" cy="42" r="4" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-            <circle cx="70" cy="42" r="4" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-          </svg>
-        </div>
-        
-        <div className="absolute top-20 right-20 opacity-20 animate-pulse" style={{ animationDelay: '1s' }}>
-          <svg width="80" height="40" viewBox="0 0 100 50" fill="none">
-            <path d="M20 30 L35 20 L65 20 L80 30 L80 40 L20 40 Z" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-            <circle cx="30" cy="42" r="4" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-            <circle cx="70" cy="42" r="4" stroke="#E1AF22" strokeWidth="2" fill="none"/>
-          </svg>
-        </div>
-      </div>
-
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Login/Signup card */}
       <div className="relative z-10">
         <div className="w-96 relative">

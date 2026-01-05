@@ -6,33 +6,7 @@ interface LandingPageProps {
 
 export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-black text-yellow-400 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="fixed inset-0 overflow-hidden opacity-20 pointer-events-none">
-        <div className="absolute inset-0" 
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(225, 175, 34, 0.1) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(225, 175, 34, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
-          }}
-        />
-        
-        {/* Perspective grid */}
-        <div className="absolute bottom-0 left-0 right-0 h-1/2"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(225, 175, 34, 0.15) 2px, transparent 2px),
-              linear-gradient(to bottom, rgba(225, 175, 34, 0.15) 2px, transparent 2px)
-            `,
-            backgroundSize: '100px 100px',
-            transform: 'perspective(500px) rotateX(60deg)',
-            transformOrigin: 'center bottom'
-          }}
-        />
-      </div>
-
+    <div className="min-h-screen text-yellow-400 relative overflow-hidden">
       {/* Header/Navigation */}
       <header className="relative z-20 border-b border-yellow-400/30">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
@@ -97,7 +71,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
           </h1>
           
           <p className="text-2xl md:text-3xl mb-4 tracking-wider">
-            🛣️ Where You Earn on the Streets ⛽ 🛞
+            Where You Earn on the Streets
           </p>
           
           <p className="text-xl text-yellow-400/80 max-w-3xl mx-auto mb-12 leading-relaxed">
@@ -122,7 +96,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
               fontFamily: 'monospace',
               textShadow: '0 0 15px rgba(225, 175, 34, 0.6)'
             }}>
-            🌆 THE CORE LOOP
+            THE CORE LOOP
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -170,7 +144,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
                 fontFamily: 'monospace',
                 textShadow: '0 0 15px rgba(225, 175, 34, 0.6)'
               }}>
-              🛸 MEET YOUR R.I.D.E.™
+              MEET YOUR R.I.D.E.™
             </h2>
             <p className="text-xl text-yellow-400/80">
               (Reactive Identity-Driven Entity) 🏁
@@ -245,7 +219,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
               fontFamily: 'monospace',
               textShadow: '0 0 15px rgba(225, 175, 34, 0.6)'
             }}>
-            🎮 SPECIAL MODES
+            SPECIAL MODES
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
